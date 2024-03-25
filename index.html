@@ -3,30 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max00141 Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Max00141 Home</title>
+    <style>
+        
+        body {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #2C2C54;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        
+        .header-image {
+            width: 100%;
+            display: block;
+        }
+
+        .headline {
+            color: #AAABB8;
+        }
+
+        .image-container {
+            background-color: white;
+            padding: 1rem;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            color: #AAABB8;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-size:larger;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ECECEC;
+            transition: all 0.2s ease;
+        }
+
+        .text-highlight {
+            color: #ECECEC;
+            font-size: 35px;
+        }
+
+        .text-container {
+            background-color: #e3e3e3;
+            padding: 8px;
+            font-weight: 600;
+            font-size: large;
+        }
+
+        .maps-container {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .maps-right {
+            margin-left: 16px;
+            width: 30%;
+        }
+
+        .maps-frame {
+            border: 0;
+            height: 350px;
+            width: 70%;
+        }
+
+        .legal-content {
+            padding: 8px;
+            color: #AAABB8;
+            margin-right: 16px;
+        }
+        
+        .legal-text {
+            
+            font-size: large;
+            color: #AAABB8;
+        }
+
+    </style>
+
 </head>
 <body>
-    <nav class="navbar">
-    <div class="navbar__container">
-        <a href="/" id="navbar__logo">Max00141</a>
-        <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <div class="navbar">
+        <h1 class="headline">
+            Max00141 <br> <span class="text-highlight">Info Page</span>
+        </h1>
+
+        <div>
+            <a href="/">About</a>
+            <a href="/">Info</a>
+            <a href="/">Contact</a>
+            <a href="/">Upcoming Projects</a>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="/" class="navbar__links"> Home </a>
-            </li>
-            <li class="navbar__item">
-                <a href="/about.html" class="navbar__links"> About </a>
-            </li>
-            <li class="navbar__item">
-                <a href="/" class="navbar__links"> Contact </a>
-            </li>
-        </ul>
     </div>
-    </nav>
+
+    <div class="image-container">
+        <img class="header-image" src="header.jpg">
+
+        <div class="text-container">
+            My own website with information on my newest progects and much more.
+        </div>
+        
+
+        <div class="maps-container">
+            <iframe class="maps-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5135206.927726321!2d5.174617112455808!3d51.06369942661564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a721ec2b1be6b%3A0x75e85d6b8e91e55b!2sDeutschland!5e0!3m2!1sde!2sde!4v1711377410114!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="text-container maps-right">
+                I am from Germany
+            </div>
+        </div>
+    </div>
+
+    <div class="legal-content">
+        <span class="legal-text">(c) 2021 - Max00141 Copany GmbH:</span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" >Impressum</a><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Datenschutz</a>
+    </div>
 </body>
 </html>
