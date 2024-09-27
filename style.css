@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #272838;
+    color: #F3EFE0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    position: static;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: transparent;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header a {
+    text-decoration: none;
+    color: #F3EFE0;
+    font-size: 3rem;
+    margin-top: 60px;
+    font-weight: 700;
+}
+
+.home {  
+    height: calc(90vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.home-content h1 {
+    color: #7FEFBD;
+    font-size: 100px;
+    text-shadow: #7fefbd76 0px 0px 55px;
+}
+
+.home-content h3 {
+    font-size: 30px;
+}
+
+.home-content .btn {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #F3EFE0;
+    height: 75%;
+    width: 35%;
+    border: 2px solid #7FEFBD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    transition: 0.5s;
+}
+
+.btn a:hover {
+    background-color: #7FEFBD;
+    color: #272838;
+}
+
+.hire-me {
+    background: #7FEFBD;
+    height: 50vh;
+    color: #F3EFE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hire-me-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.hire-me-content a {
+    font-size: 130px;
+    color: #F3EFE0;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    line-height: 1.6;
+    font-family: 'Gowun Batang', sans-serif;
+    font-weight: 700;
+    transform: rotate(-5deg);
+    display: flex;
+    margin-left: 25px;
+}
+
+.hire-me-content a:hover {
+    color: #272838;
+}
+
+.hire-me-content h4 {
+    text-align: center;
+    font-size: 30px;
+    color: #272838;
+}
+
+.hire-me-content p {
+    margin-top: 2rem;
+    font-size: 25px;
+}
