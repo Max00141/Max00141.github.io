@@ -128,3 +128,66 @@ html {
     margin-top: 2rem;
     font-size: 25px;
 }
+
+.about-me {
+    background: #F3EFE0;
+    color: #272838;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Zentriert den Inhalt vertikal */
+}
+
+.about-me-content {
+    text-align: center; /* Zentriert den gesamten Inhalt der about-me-content */
+}
+
+.about-me-content a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 75px;
+    font-weight: 700;
+    color: #272838;
+    margin: 2rem 0;
+}
+
+.about-me-content .info-boxes {
+    display: flex; /* Flexbox für die Boxen */
+    justify-content: center; /* Zentriert die Boxen */
+    width: 100%; /* Nimmt die gesamte Breite ein */
+}
+
+.about-me-content .info-heading {
+    font-size: 50px;
+    color: #F3EFE0;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.about-me-content .info-boxes .info-1,
+.about-me-content .info-boxes .info-2,
+.about-me-content .info-boxes .info-3 {
+    width: 30vw; /* Breite der Boxen */
+    margin: 0 10px; /* Abstand zwischen den Boxen */
+    text-align: center; /* Zentriert den Inhalt der Boxen */
+    padding: 20px; /* Polsterung für den Inhalt der Boxen */
+    background-color: #7FEFBD; /* Hintergrundfarbe für die Boxen */
+    border-radius: 8px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schatten für die Boxen */
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 768px) {
+    .about-me-content .info-boxes {
+        flex-direction: column; /* Boxen untereinander anordnen */
+        align-items: center; /* Zentriert die Boxen */
+    }
+
+    .about-me-content .info-boxes .info-1,
+    .about-me-content .info-boxes .info-2,
+    .about-me-content .info-boxes .info-3 {
+        width: 80vw; /* Breite auf Mobilgeräten */
+        margin: 10px 0; /* Vertikaler Abstand */
+    }
+}
